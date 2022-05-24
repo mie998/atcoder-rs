@@ -1,3 +1,8 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        n: u8,
+    };
+    println!("{}", n as char)
 }
