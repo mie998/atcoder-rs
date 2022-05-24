@@ -1,0 +1,21 @@
+[
+  {
+    "key": "alt+f",
+    "command": "settings.cycle", // `settings.cycle` is the command that's actually being run, from the extension `hoovercj.vscode-settings-cycler`
+    "when": "editorTextFocus && editorLangId == 'rust'", // this keybinding is only active when (editor is in focus) and (the language is `rust`)
+    "args": {
+      // these are the arguments passed to `settings.cycle`
+      "id": "rust-toggle-inlay-hints", // must be unique
+      "overrideWorkspaceSettings": true,
+      "values": [
+        // Note: use the same settings in each values object
+        {
+          "rust-analyzer.inlayHints.enable": false // sets the inlay hints off
+        },
+        {
+          "rust-analyzer.inlayHints.enable": true // sets the inlay hints on
+        }
+      ]
+    }
+  }
+]
