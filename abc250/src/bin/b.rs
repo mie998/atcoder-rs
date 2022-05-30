@@ -15,6 +15,7 @@ fn main() {
             }
         }
     }
+
     let ans = board
         .iter()
         .map(|vc| vc.iter().collect::<String>())
