@@ -2,6 +2,7 @@ use proconio::input;
 
 const S_LENGTH: usize = 10;
 
+
 fn main() {
     input! { n: usize, ss: [String; n] }
     let mut ans = 9999;
