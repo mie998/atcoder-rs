@@ -126,7 +126,7 @@ path = "./{{ contest }}"
 
 [test]
 # Toolchain for the test. (optional)
-toolchain = ""
+toolchain = "1.42.0-x86_64-unknown-linux-gnu"
 # Profile for `cargo build`. ("dev" | "release")
 #
 # Defaults to `"dev"`.
